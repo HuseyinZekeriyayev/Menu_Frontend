@@ -51,5 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
     });
 
-   
+   function checkDevice() {
+  if (window.innerWidth <= 768) {
+    document.body.classList.add('mobile');
+    document.body.classList.remove('desktop');
+  } else {
+    document.body.classList.add('desktop');
+    document.body.classList.remove('mobile');
+  }
+}
+checkDevice();
+window.addEventListener('resize', checkDevice);
 });
