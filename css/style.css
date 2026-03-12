@@ -1,17 +1,24 @@
+/* ── DESKTOP: 80% zoom ── */
 @media (min-width: 769px) {
-  html {
-    zoom: 0.8;
-  }
+    html {
+        zoom: 0.8;
+    }
 }
-body {
-    background: #383226 !important; 
-    color: #2c1a0d;
-    font-family: 'Nunito', sans-serif;
+
+/* ── ÜMUMI ── */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background: #383226;
+    color: #2c1a0d;
+    font-family: 'Nunito', sans-serif;
+}
 
+/* ── HEADER ── */
 header {
     background: white;
     padding: 2rem 0;
@@ -20,102 +27,52 @@ header {
 
 .header-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
-
 
 .logo-container {
-    flex: 1;
     text-align: center;
-}
-.logo-circle {
-    width: 100px;                
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #ff6b35, #c0392b);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 0.8rem;
-    box-shadow: 0 6px 20px rgba(192,57,43,0.25);
-    overflow: hidden;
-    border: 4px solid white;
 }
 
 .logo-img {
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-.logo-text {
-    font-size: 2.8rem;           
-    font-weight: bold;
-    color: #c0392b;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-
-.icons {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.favorites-wrapper {
-    position: relative;
-}
-
-.favorites-count {
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    background: #e74c3c;
-    color: white;
-    font-size: 1.1rem;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* ── HERO ── */
 .hero {
-    padding: 10rem 0 8rem;
+    padding: 6rem 1rem 5rem;
     text-align: center;
-    background: #fdfaf5; 
+    background: #fdfaf5;
 }
-
 
 .hero-title {
-    font-size: 5.5rem;
+    font-size: 4rem;
     font-weight: 900;
     color: #c0392b;
     margin-bottom: 1.2rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif;
 }
 
 .hero-subtitle {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: #444;
-    margin-bottom: 6rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
+    margin-bottom: 4rem;
 }
 
-
+/* ── FLAVOR GRID ── */
 .flavor-grid {
     display: flex;
     justify-content: center;
-    gap: 12rem; 
+    gap: 4rem;
     flex-wrap: wrap;
 }
 
@@ -126,13 +83,10 @@ header {
 }
 
 .flavor-circle {
-    width: 340px;                
-    height: 340px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
-    background: transparent;
-    border: none;
-    box-shadow: none;
     transition: transform 0.4s ease;
     display: flex;
     align-items: center;
@@ -142,213 +96,159 @@ header {
 .flavor-circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover;            
-    object-position: center;      
+    object-fit: cover;
     display: block;
 }
+
 .flavor-item:hover .flavor-circle {
     transform: scale(1.07);
 }
 
 .flavor-label {
     display: block;
-    margin-top: 2.2rem;
-    font-size: 2.8rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #c0392b;
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-    .flavor-grid {
-        gap: 2rem;
-    }
-    .flavor-circle {
-        width: 130px;
-        height: 130px;
-    }
-    .flavor-label {
-        font-size: 1.4rem;
-        margin-top: 1rem;
-    }
-    .hero-title {
-        font-size: 2.8rem;
-    }
-    .hero {
-        padding: 4rem 1rem;
-    }
-    .menu-main-title {
-        font-size: 3rem;
-    }
-    .menu-section h2 {
-        font-size: 2.4rem;
-    }
-    .box .image {
-        height: 22rem;
-    }
-   .box {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .box .content,
-    .box .info {
-        width: 100%;
-        padding: 1rem;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        white-space: normal;
-    }
-    #ickiler .box .image {
-        height: auto;
-    }
-    .menu-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 0 1rem;
-    }
-    .container {
-        padding: 0 1rem;
-    }
-}
-
-
+/* ── MENU CONTENT ── */
 .menu-content {
     padding-top: 4rem;
 }
 
-.menu-section {
-    padding: 6rem 0;
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.menu-section h2 {
-    font-size: 4.2rem;
+.menu-main-title {
+    font-size: 4rem;
+    font-weight: 900;
     color: #c0392b;
     text-align: center;
     margin: 4rem 0 3rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    
-}
-.menu-main-title {
-    font-size: 6rem;                    
-    font-weight: 900;
-    color: #c0392b;                  
-    text-align: center;
-    margin: 6rem 0 5rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif;
     text-shadow: 0 4px 12px rgba(192,57,43,0.2);
 }
 
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    gap: 3rem;
+.menu-section {
+    padding: 4rem 0;
 }
 
+.menu-section h2 {
+    font-size: 3rem;
+    color: #c0392b;
+    text-align: center;
+    margin: 2rem 0 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ── MENU GRID ── */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* ── BOX ── */
 .box {
     position: relative;
     border-radius: 1.5rem;
     overflow: hidden;
-   
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
 }
 
 .box:hover {
-    transform: translateY(-12px);
+    transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .box .image {
-    height: 38rem;
+    width: 100%;
+    height: 28rem;
     position: relative;
+    overflow: hidden;
 }
 
 .box .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s;
-}
-.clean-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;               
-    object-position: center;
-    background: transparent;
     display: block;
+    transition: transform 0.4s;
 }
 
 .box:hover .image img {
     transform: scale(1.06);
 }
 
-
-.box .image .fa-heart {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background: rgba(255,255,255,0.92);
-    border-radius: 50%;
-    width: 7rem;
-    height: 7rem;
-    line-height: 7rem;
-    font-size: 3.2rem;
-    color: #444;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    transition: all 0.4s ease;
-}
-
-.box .image .fa-heart:hover,
-.box .image .fa-heart.favorited {
-    color: #e74c3c !important;
-    transform: translate(-50%, -50%) scale(1.2);
-    background: white;
-    box-shadow: 0 15px 35px rgba(231,76,60,0.4);
-}
-
-.box .info {
-    padding: 2rem;
-    text-align: center;
-}
-
-.box .info .stars {
-    font-size: 1.8rem;
-    color: var(--green);
-    margin-bottom: 1rem;
-}
-
-.box .info h3 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
-}
-
-.box .info .price {
-    font-size: 2.8rem;
-    color: var(--green);
-    font-weight: bold;
-}
-
+/* ── İÇKİLƏR xüsusi ── */
 #ickiler .box .image {
-    height: 820px;          
-    
+    height: auto;
 }
 
 #ickiler .box .image img {
-    object-fit: contain;    
+    object-fit: contain;
+    height: auto;
     width: 100%;
-    height: 100%;
 }
 
+/* ── MOBİL ── */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
 
-#ickiler .box .content {
-    padding: 1.5rem;        
-    text-align: center;
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .flavor-grid {
+        gap: 2rem;
+    }
+
+    .flavor-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .flavor-label {
+        font-size: 1.1rem;
+    }
+
+    .menu-main-title {
+        font-size: 2.4rem;
+        margin: 2rem 0;
+    }
+
+    .menu-section h2 {
+        font-size: 2rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .box .image {
+        height: 22rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    #ickiler .box .image {
+        height: auto;
+    }
 }
