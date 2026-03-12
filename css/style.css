@@ -162,14 +162,41 @@ header {
 
 @media (max-width: 768px) {
     .flavor-grid {
-        gap: 6rem;
+        gap: 2rem;
     }
     .flavor-circle {
-        width: 260px;
-        height: 260px;
+        width: 130px;
+        height: 130px;
+    }
+    .flavor-label {
+        font-size: 1.4rem;
+        margin-top: 1rem;
     }
     .hero-title {
-        font-size: 4rem;
+        font-size: 2.8rem;
+    }
+    .hero {
+        padding: 4rem 1rem;
+    }
+    .menu-main-title {
+        font-size: 3rem;
+    }
+    .menu-section h2 {
+        font-size: 2.4rem;
+    }
+    .box .image {
+        height: 22rem;
+    }
+    #ickiler .box .image {
+        height: auto;
+    }
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    .container {
+        padding: 0 1rem;
     }
 }
 
@@ -311,30 +338,4 @@ header {
 #ickiler .box .content {
     padding: 1.5rem;        
     text-align: center;
-}
-
-
-
-
-@media (max-width: 768px) {
-    .flavor-grid {
-        gap: 4rem;
-    }
-
-    .flavor-circle {
-        width: 220px;
-        height: 220px;
-    }
-
-    .menu-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .box .image {
-        height: 30rem;
-    }
-
-    .hero-title {
-        font-size: 3.8rem;
-    }
 }
