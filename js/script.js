@@ -45,11 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+  if (icon) {
     icon.addEventListener('click', e => {
         e.preventDefault();
         modal.classList.toggle('active');
-        
     });
+}
 
    function checkDevice() {
   if (window.innerWidth <= 768) {
