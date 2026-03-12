@@ -1,458 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qızartma Dönər</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- font awesome cdn link  -->
+    <title>Qızartma Dönər - Menyu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-    
-<!-- header section starts -->
+
 
 <header>
-
-    <section class="flex">
-
-        <a href="#" class="logo"><i class="fas fa-fire"></i> Qızartma Dönər</a>
-
-        <nav class="navbar">
-            <a class="active" href="#home">home</a>
-            <a href="#dishes">dishes</a>
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <!-- <a href="#review">review</a> -->
-            <a href="#order">order</a>
-        </nav>
-    
-        <div class="icons">
-            <i class="fas fa-bars" id="menu-bars"></i>
-            <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
+    <div class="header-flex">
+        
+        <div class="logo-container">
+            <img src="images/Qizartma.png" alt="Qızartma Dönər Logo" class="logo-img">
+           
         </div>
 
-    </section>
-
+            
+        </div>
+    </div>
 </header>
 
-<!-- header section ends-->
 
-<!-- search form  -->
+<section class="hero">
+    <div class="container">
+       
+        <h1 class="hero-title">SEÇİMİNİZİ EDİN!</h1>
+        <p class="hero-subtitle">
+           
+        </p>
 
-<form action="" id="search-form">
-    <input type="search" placeholder="Axtarış..." name="" id="search-box">
-    <label for="search-box" class="fas fa-search"></label>
-    <i class="fas fa-times" id="close"></i>
-</form>
-
-<!-- home section starts  -->
-
-<div class="container">
-
-    <section class="home" id="home">
-
-        <div class="swiper home-slider">
-    
-            <div class="swiper-wrapper">
-    
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>our special dish</span>
-                        <h3>spicy noodles</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                    <div class="image">
-                        <img src="images/Kombo 1.png" alt="">
-                    </div>
+        <div class="flavor-grid">
+            <a href="#donerler" class="flavor-item">
+                <div class="flavor-circle">
+                    <img src="images/doner basliq.png" alt="Dönərlər">
                 </div>
-    
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>our special dish</span>
-                        <h3>fried chicken</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                    <div class="image">
-                        <img src="images/home-img-2.png" alt="">
-                    </div>
+                <span class="flavor-label">DÖNƏRLƏR</span>
+            </a>
+
+            <a href="#saurmalar" class="flavor-item">
+                <div class="flavor-circle">
+                    <img src="images/saurma basliq.png" alt="Şaurmalar">
                 </div>
-    
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>our special dish</span>
-                        <h3>hot pizza</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                        <a href="#" class="btn">order now</a>
-                    </div>
-                    <div class="image">
-                        <img src="images/home-img-3.png" alt="">
-                    </div>
+                <span class="flavor-label">ŞAURMALAR</span>
+            </a>
+
+            <a href="#diger" class="flavor-item">
+                <div class="flavor-circle">
+                    <img src="images/qairisiq kabab.png" alt="Digər yeməklər">
                 </div>
-    
-            </div>
-    
-            <div class="swiper-pagination"></div>
-    
+                <span class="flavor-label">DİGƏR YEMƏKLƏR</span>
+            </a>
+            
+            <a href="#ickiler" class="flavor-item">
+                <div class="flavor-circle">
+                    <img src="images/ickilerr.png" alt="İçkilər">
+                </div>
+                <span class="flavor-label">İçkilər</span>
+            </a>
         </div>
-    
-    </section>
+    </div>
+</section>
 
-</div>
 
-<!-- home section ends -->
 
-<!-- dishes section starts  -->
+ 
 
-<div class="container">
 
-    <section class="dishes" id="dishes">
+<<main class="menu-content">
+    <div class="container">
+      
+        <h1 class="menu-main-title">MENYUMUZ</h1>
 
-        <h3 class="sub-heading">Ləzzətlərimiz </h3>
-        <h1 class="heading">ƏN ÇOX SİFARİŞ EDİLƏNLƏR </h1>
-    
-        <div class="box-container">
-    
-            <div class="box">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="images/doner.avif" alt="">
-                <h3>Dönər</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+            
+        <section id="donerler" class="menu-section">
+            <h2>Dönərlər</h2>
+            <div class="menu-grid">
+
+                     
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/Toyuq əti ilə çörəkdə dönər 2.50 AZN.png" alt="">
+                                
+                               
+                            </div>
+                            <div class="content">
+                                
+                               
+                                
+                            </div>
+                        </div>
+
+                       
+                        <!-- Mal əti ilə çörəkdə basdırma -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/Basdırma.png" alt="">
+                                
+                            
+                                </div>
+                            <div class="content">
+                                
+                                
+                            </div>
+                        </div>
+
+                        <!-- Mal əti ilə çörəkdə dönər -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 3.png" alt="">
+                               
+                            </div>
+                            <div class="content">
+                                
+                               
+                               
+                            </div>
+                        </div>
+
+                       
+
+                        <!-- Böyük toyuq -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 5.png" alt="">
+                           
+                            </div>
+                            <div class="content">
+                                
+                            </div>
+                        </div>
+
+                       
+                        <!-- Toyuq basdırma çörəkdə -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 6.png" alt="">
+                               
+                            </div>
+                            <div class="content">
+                                
+                         
+                             
+                               
+                            </div>
+                        </div>
+
+                        
+                        <!-- Mal basdırma lavaşda -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 8.png" alt="">
+                                
+                            </div>
+                            <div class="content">
+                                
+                                
+                               
+                            </div>
+                        </div>
+                        <!-- Tombik mal -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 10.png" alt="">
+                          
+                            </div>
+                            <div class="content">
+                               
+                               
+                           
+                            </div>
+                        </div>
+
+
+                        
+                        <!-- Qızartma special mal -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 12.png" alt="">
+                               
+                            </div>
+                             <div class="content">
+                          
+                             
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- Hatay pendirli mal -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 13.png" alt="">
+                                
+                            </div>
+                            <div class="content">
+                                
+                               
+                            </div>
+                        </div>
+
+                        
+                        <!-- Hatay mal -->
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 14.png" alt="">
+                              
+                            </div>
+                            <div class="content">
+                               
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
                 </div>
-                <span>$15.99</span>
+            </div>
+<!-- Şaurmalar -->
+        <section id="saurmalar" class="menu-section">
+            <h2>Şaurmalar</h2>
+            <div class="menu-grid">
+
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 15.png" alt="">
+                             
+                            </div>
+                            <div class="content">
+                              
+                             
+                               
+                            </div>
+                        </div>
+                        
+                                <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 16.png" alt="">
+                               
+                            </div>
+                            <div class="content">
+                             
+                                
+                           
+                            </div>
+                        </div>
+                        
+                     <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 17.png" alt="">
+                           
+                            </div>
+                            <div class="content">
+                               
+                                
+                                
+                            </div>
+                        </div>
+                            
+                                    <div class="box">
+                            <div class="image">
+                                <img src="images/yeni 18.png" alt="">
+                                
+                            </div>
+                            <div class="content">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        
+
+
+
+                    </div>
+                </div>
+            
+
+        </div>
+
+<!-- İçkilər -->
+        <section id="diger" class="menu-section">
+            <h2>Digər Yeməklər</h2>
+            <div class="menu-grid">
+
+   
+
+            
+            <!-- İsgəndər mal -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/iskender yeni.png" alt="">
+                  
+                </div>
+                <div class="content">
+                 
+                </div>
+            </div>
+
+           
+
+            <!-- Plovüstü mal -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/pulov.png" alt="">
+                       
+                </div>
+                <div class="content">
+                
+                   
+                </div>
+            </div>
+
+            
+            <!-- Porsiyon mal -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/porsiyonn.png" alt="">
+                    
+                </div>
+                <div class="content">
+                    
+                  
+                </div>
+            </div>
+
+            <!-- Köftə porsiyon mal -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/koftee.png" alt="">
+                    
+                </div>
+                <div class="content">
+                   
+                    
+                </div>
+            </div>
+
+            <!-- Barbeku qanadlar -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/qanad.png" alt="">
+                   
+                </div>
+                <div class="content">
+                   
+                </div>
+            </div>
+
+            <!-- Barbeku budu -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/bud.png" alt="">
+                   
+                </div>
+                <div class="content">
+                
+                </div>
+            </div>
+
+            <!-- Nuggets -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/nuggets yeni.png" alt="">
+                    
+                </div>
+                <div class="content">
+             
+                </div>
+            </div>
+
+            <!-- Kartof fri -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/frii.png" alt="">
+                  
+                </div>
+                <div class="content">
+                
+                </div>
+            </div>
+
+            <!-- Düyü -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/duyuu.png" alt="">
+                  
+                </div>
+                <div class="content">
                
-            </div>
-    
-            <div class="box">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="images/beyti doner.jpg" alt="">
-                <h3>Beyti Dönər</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
                 </div>
-                <span>$15.99</span>
             </div>
-    
-            <div class="box">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="images/dish-3.png" alt="">
-                <h3>tasty food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$15.99</span>
-            </div>
-    
-            <div class="box">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="images/dish-4.png" alt="">
-                <h3>tasty food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$15.99</span>
-            </div>
-    
-            <div class="box">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="images/dish-5.png" alt="">
-                <h3>tasty food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$15.99</span>
-            </div>
-    
-            <div class="box">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="images/dish-6.png" alt="">
-                <h3>tasty food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$15.99</span>
-            </div>
-    
-        </div>
-    
-    </section>
 
+            <!-- Köftə mal -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/kofte mal.png" alt="">
+                
+                </div>
+                <div class="content">
+                   
+                  
+                </div>
+            </div>
+
+            <!-- Köftə toyuq -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/kofte toyuqq.png" alt="">
+                  
+                </div>
+                <div class="content">
+                   
+                  
+                  
+                </div>
+            </div>
+
+            <!-- Lülə dürüm -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/lule toyuq.png" alt="">
+                     
+                </div>
+                <div class="content">
+                 
+            
+                 
+                </div>
+            </div>
+     <!-- Lülə dürüm  et-->
+            <div class="box">
+                <div class="image">
+                    <img src="images/lule et.png" alt="">
+                     
+                </div>
+                <div class="content">
+                 
+            
+                 
+                </div>
+            </div>
+              <!-- Lülə dürüm  et-->
+            <div class="box">
+                <div class="image">
+                    <img src="images/çöp şiş.png" alt="">
+                     
+                </div>
+                <div class="content">
+                 
+            
+                 
+                </div>
+            </div>
+            <!-- Mərci -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/merci yeni.png" alt="">
+                     
+                </div>
+                <div class="content">
+                    
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- İçkilər -->
+        <section id="ickiler" class="menu-section">
+           
+            <div class="menu-grid">
+<div class="box">
+                <div class="image">
+                    <img src="images/İCKİ.png" alt="">
+                     
+                </div>
+                <div class="content">
+                 
+            
+                 
+                </div>
+            </div>
+     
+
+
+          
+
+                      
+
+        </div>
+    </div>
 </div>
 
-<!-- dishes section ends -->
-
-<!-- about section starts  -->
-
-<div class="container">
-
-    <section class="about" id="about">
-
-        <h3 class="sub-heading"> Haqqımızda </h3>
-        <h1 class="heading"> Nə üçün BİZ? </h1>
-    
-        <div class="row">
-    
-            <div class="image">
-                <img src="images/about-img.png" alt="">
-            </div>
-    
-            <div class="content">
-                <h3>Şəhərin sevilən dadı</h3>
-                <p>Biz müştərilərimizə zəngin və müxtəlif menyu təqdim edirik. İstər sürətli nahar, istər doyumlu axşam yeməyi üçün seçimlərimiz var. Yeməklərimiz təzə məhsullarla hazırlanır, gigiyena və keyfiyyət standartlarına diqqətlə riayət olunur. 
-                    Sürətli xidmət və münasib qiymət isə bizi seçməyiniz üçün əsas səbəblərdəndir.</p>
-                <div class="icons-container">
-                    <div class="icons">
-                        <i class="fas fa-shipping-fast"></i>
-                        <span>Çatdırılma</span>
-                    </div>
-                    <div class="icons">
-                        <i class="fas fa-dollar-sign"></i>
-                        <span>Ödəniş</span>
-                    </div>
-                    <div class="icons">
-                        <i class="fas fa-headset"></i>
-                        <span>24/7 Xidmət</span>
-                    </div>
-                </div>
-                <a href="#" class="btn">Ətraflı</a>
-            </div>
-    
-        </div>
-    
     </section>
-
-</div>
-
-<!-- about section ends -->
-
-<!-- menu section starts  -->
-
-<div class="container">
-
-    <section class="menu" id="menu">
-
-        <h3 class="sub-heading">Menyumuz </h3>
-        <h1 class="heading"> Günün LƏZZƏTLƏRİ</h1>
-    
-        <div class="box-container">
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-1.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-2.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-3.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-4.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-5.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-6.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-7.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-8.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-9.jpg" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>delicious food</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-                    <span class="price">$12.99</span>
-                </div>
-            </div>
-    
-        </div>
-    
-    </section>
-
 </div>
 
 <!-- menu section ends -->
@@ -556,117 +600,13 @@
 
 <!-- order section starts  -->
 
-<div class="container">
 
-    <section class="order" id="order">
-
-        <h3 class="sub-heading"> İNDİ SİFARİŞ ET </h3>
-        <h1 class="heading"> SÜRƏTLİ ÇATDIRILMA </h1>
-    
-        <form action="">
-    
-            <div class="inputBox">
-                <div class="input">
-                    <span>your name</span>
-                    <input type="text" placeholder="enter your name">
-                </div>
-                <div class="input">
-                    <span>your number</span>
-                    <input type="number" placeholder="enter your number">
-                </div>
-            </div>
-            <div class="inputBox">
-                <div class="input">
-                    <span>your order</span>
-                    <input type="text" placeholder="enter food name">
-                </div>
-                <div class="input">
-                    <span>additional food</span>
-                    <input type="test" placeholder="extra with food">
-                </div>
-            </div>
-            <div class="inputBox">
-                <div class="input">
-                    <span>how musch</span>
-                    <input type="number" placeholder="how many orders">
-                </div>
-                <div class="input">
-                    <span>date and time</span>
-                    <input type="datetime-local">
-                </div>
-            </div>
-            <div class="inputBox">
-                <div class="input">
-                    <span>your address</span>
-                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="input">
-                    <span>your message</span>
-                    <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
-                </div>
-            </div>
-    
-            <input type="submit" value="order now" class="btn">
-    
-        </form>
-    
-    </section>
-
-</div>
 
 <!-- order section ends -->
 
 <!-- footer section starts  -->
 
-<div class="container">
 
-    <section class="footer">
-
-        <div class="box-container">
-    
-            <div class="box">
-                <h3>Ünvan</h3>
-                <a href="#">india</a>
-                <a href="#">japan</a>
-                <a href="#">russia</a>
-                <a href="#">USA</a>
-                <a href="#">france</a>
-            </div>
-    
-            <div class="box">
-                <h3>Keçidlər</h3>
-                <a href="#">home</a>
-                <a href="#">dishes</a>
-                <a href="#">about</a>
-                <a href="#">menu</a>
-                <a href="#">reivew</a>
-                <a href="#">order</a>
-            </div>
-    
-            <div class="box">
-                <h3>Əlaqə</h3>
-                <a href="#">+123-456-7890</a>
-                <a href="#">+111-222-3333</a>
-                <a href="#">shaikhanas@gmail.com</a>
-                <a href="#">anasbhai@gmail.com</a>
-                <a href="#">mumbai, india - 400104</a>
-            </div>
-    
-            <div class="box">
-                <h3>Sosial media </h3>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">linkedin</a>
-            </div>
-    
-        </div>
-    
-        <div class="credit"> copyright @ 2021 by <span>mr. web designer</span> </div>
-    
-    </section>
-
-</div>
 
 <!-- footer section ends -->
 
@@ -674,26 +614,6 @@
 <!-- <div class="loader-container">
     <img src="images/loader.gif" alt="">
 </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

@@ -1,93 +1,55 @@
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('header .flex .navbar');
-
-menu.onclick = () =>{
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
-}
-
-let section = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header .navbar a');
-
-window.onscroll = () =>{
-
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('active');
-
-  section.forEach(sec =>{
-
-    let top = window.scrollY;
-    let height = sec.offsetHeight;
-    let offset = sec.offsetTop - 150;
-    let id = sec.getAttribute('id');
-
-    if(top >= offset && top < offset + height){
-      navLinks.forEach(links =>{
-        links.classList.remove('active');
-        document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
-      });
-    };
-
-  });
-
-}
-
-document.querySelector('#search-icon').onclick = () =>{
-  document.querySelector('#search-form').classList.toggle('active');
-}
-
-document.querySelector('#close').onclick = () =>{
-  document.querySelector('#search-form').classList.remove('active');
-}
-
-var swiper = new Swiper(".home-slider", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  loop:true,
+document.querySelectorAll('.flavor-item').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop - 100, 
+                behavior: 'smooth'
+            });
+        }
+    });
 });
 
-var swiper = new Swiper(".review-slider", {
-  spaceBetween: 20,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  loop:true,
-  breakpoints: {
-    0: {
-        slidesPerView: 1,
-    },
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
+document.addEventListener('DOMContentLoaded', () => {
+    let favorites = [];
+
+    const countEl = document.getElementById('favorites-count');
+    const modal = document.getElementById('favorites-modal');
+    const list = document.getElementById('favorites-list');
+    const icon = document.getElementById('favorites-icon');
+
+    function updateCount() {
+        countEl.textContent = favorites.length;
+    }
+
+    document.querySelectorAll('.box .fa-heart').forEach(heart => {
+        heart.addEventListener('click', e => {
+            e.preventDefault();
+            const box = heart.closest('.box');
+            const name = box.querySelector('h3').textContent.trim();
+            const price = box.querySelector('.price').textContent.trim();
+
+            const index = favorites.findIndex(f => f.name === name);
+            if (index !== -1) {
+                favorites.splice(index, 1);
+                heart.classList.remove('favorited');
+            } else {
+                favorites.push({ name, price });
+                heart.classList.add('favorited');
+            }
+
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+            updateCount();
+        });
+    });
+
+    icon.addEventListener('click', e => {
+        e.preventDefault();
+        modal.classList.toggle('active');
+        
+    });
+
+   
 });
-
-function loader(){
-  document.querySelector('.loader-container').classList.add('fade-out');
-}
-
-function fadeOut(){
-  setInterval(loader, 3000);
-}
-
-window.onload = fadeOut;
