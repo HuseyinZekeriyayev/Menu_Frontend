@@ -1,4 +1,8 @@
-
+@media (min-width: 769px) {
+  html {
+    zoom: 0.8;
+  }
+}
 body {
     background: #383226 !important; 
     color: #2c1a0d;
