@@ -187,6 +187,19 @@ header {
     .box .image {
         height: 22rem;
     }
+   .box {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .box .content,
+    .box .info {
+        width: 100%;
+        padding: 1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
     #ickiler .box .image {
         height: auto;
     }
