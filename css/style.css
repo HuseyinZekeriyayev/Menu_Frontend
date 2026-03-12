@@ -1,11 +1,6 @@
-/* ── DESKTOP: 80% zoom ── */
-@media (min-width: 769px) {
-    html {
-        zoom: 0.8;
-    }
-}
-
-/* ── ÜMUMI ── */
+/* ============================================
+   ÜMUMI
+   ============================================ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +13,9 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-/* ── HEADER ── */
+/* ============================================
+   HEADER
+   ============================================ */
 header {
     background: white;
     padding: 2rem 0;
@@ -45,15 +42,17 @@ header {
     object-fit: contain;
 }
 
-/* ── HERO ── */
+/* ============================================
+   HERO
+   ============================================ */
 .hero {
-    padding: 6rem 1rem 5rem;
+    padding: 6rem 2rem 5rem;
     text-align: center;
     background: #fdfaf5;
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 5.5rem;
     font-weight: 900;
     color: #c0392b;
     margin-bottom: 1.2rem;
@@ -63,16 +62,18 @@ header {
 }
 
 .hero-subtitle {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: #444;
     margin-bottom: 4rem;
 }
 
-/* ── FLAVOR GRID ── */
+/* ============================================
+   FLAVOR GRID
+   ============================================ */
 .flavor-grid {
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 6rem;
     flex-wrap: wrap;
 }
 
@@ -83,8 +84,8 @@ header {
 }
 
 .flavor-circle {
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     overflow: hidden;
     transition: transform 0.4s ease;
@@ -106,15 +107,17 @@ header {
 
 .flavor-label {
     display: block;
-    margin-top: 1rem;
-    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #c0392b;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-/* ── MENU CONTENT ── */
+/* ============================================
+   MENU CONTENT
+   ============================================ */
 .menu-content {
     padding-top: 4rem;
 }
@@ -122,11 +125,11 @@ header {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 .menu-main-title {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 900;
     color: #c0392b;
     text-align: center;
@@ -142,7 +145,7 @@ header {
 }
 
 .menu-section h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #c0392b;
     text-align: center;
     margin: 2rem 0 2.5rem;
@@ -151,14 +154,18 @@ header {
     text-transform: uppercase;
 }
 
-/* ── MENU GRID: desktop 2 sutun, mobil 1 sutun ── */
+/* ============================================
+   MENU GRID — desktop 2 sütun
+   ============================================ */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 3rem;
 }
 
-/* ── BOX ── */
+/* ============================================
+   BOX
+   ============================================ */
 .box {
     position: relative;
     border-radius: 1.5rem;
@@ -176,8 +183,8 @@ header {
 .box .image {
     width: 100%;
     height: 38rem;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .box .image img {
@@ -192,7 +199,9 @@ header {
     transform: scale(1.06);
 }
 
-/* ── İÇKİLƏR xüsusi ── */
+/* ============================================
+   İÇKİLƏR xüsusi
+   ============================================ */
 #ickiler .box .image {
     height: auto;
 }
@@ -203,62 +212,64 @@ header {
     width: 100%;
 }
 
-/* ── MOBİL ── */
+/* ============================================
+   MOBİL — 768px və aşağı
+   ============================================ */
 @media (max-width: 768px) {
-    .hero {
-        padding: 3rem 1rem;
-    }
-    .box .image {
-    height: auto;
-    min-height: 20rem;
-}
 
-.box .image img {
-    position: relative;
-    width: 100%;
-    height: 22rem;
-    object-fit: cover;
-}
+    /* Hero */
+    .hero {
+        padding: 3rem 1.5rem 2.5rem;
+    }
 
     .hero-title {
-        font-size: 2.4rem;
+        font-size: 3rem;
     }
 
+    /* Flavor grid — 2x2 düzülüş */
     .flavor-grid {
         gap: 2rem;
+        padding: 0 1rem;
     }
 
     .flavor-circle {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
     }
 
     .flavor-label {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        margin-top: 0.8rem;
     }
 
+    /* Menu başlıqları */
     .menu-main-title {
-        font-size: 2.4rem;
+        font-size: 3rem;
         margin: 2rem 0;
+        letter-spacing: 1px;
     }
 
     .menu-section h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
+    /* Container padding */
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Grid — mobilde 1 sütun */
     .menu-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
+    /* Box şəkil hündürlüyü */
     .box .image {
-        height: 22rem;
+        height: 28rem;
     }
 
-    .container {
-        padding: 0 1rem;
-    }
-
+    /* İçkilər */
     #ickiler .box .image {
         height: auto;
     }
