@@ -297,64 +297,57 @@ header {
    MOBİL — yalnız bu hissə dəyişdi
    ============================================ */
 @media (max-width: 768px) {
-
     .hero {
         padding: 3rem 1rem 2rem;
     }
-
     .hero-title {
         font-size: 2.8rem;
     }
-
     .hero-subtitle {
         font-size: 1.6rem;
         margin-bottom: 3rem;
     }
-
     .flavor-grid {
         gap: 2rem;
         padding: 0 1rem;
     }
-
     .flavor-circle {
         width: 130px;
         height: 130px;
     }
-
     .flavor-label {
         font-size: 1.2rem;
         margin-top: 0.8rem;
     }
-
     .menu-main-title {
         font-size: 3rem;
         margin: 2rem 0;
         letter-spacing: 1px;
     }
-
     .menu-section h2 {
         font-size: 2.2rem;
         margin: 1.5rem 0 2rem;
     }
-
     .menu-section {
         padding: 2rem 0;
     }
-
     .menu-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 0 1rem;
     }
-
     .box .image {
-        height: 28rem;
+        height: auto;
+        min-height: 20rem;
+        background: #2a1f14;
     }
-
+    .box .image img {
+        object-fit: contain;
+        object-position: center;
+    }
     #ickiler .box .image {
         height: auto;
     }
-
     #ickiler .box .image img {
         height: auto;
     }
