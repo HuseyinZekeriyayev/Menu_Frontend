@@ -351,4 +351,24 @@ header {
     #ickiler .box .image img {
         height: auto;
     }
+   header {
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .header-flex {
+        padding: 0 1rem;   /* 4rem-dən 1rem-ə endiririk */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logo-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-text {
+        font-size: 2rem;
+    }
+}
 }
