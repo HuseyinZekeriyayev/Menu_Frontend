@@ -297,7 +297,7 @@ header {
 
 @media (max-width: 768px) {
     header {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         width: 100%;
     }
     .header-flex {
@@ -305,11 +305,14 @@ header {
         width: 100%;
         box-sizing: border-box;
     }
-    .logo-img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
+   .logo-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
     .logo-container {
         padding: 0;
         width: 100%;
