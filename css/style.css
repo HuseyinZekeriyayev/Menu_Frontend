@@ -371,7 +371,9 @@ header {
         font-size: 2rem;
     }
 }
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
+
     header {
         padding: 1rem 0;
         width: 100%;
@@ -391,5 +393,25 @@ header {
     .logo-text {
         font-size: 2rem;
     }
-}
+
+    .flavor-grid {
+        gap: 4rem;
+    }
+
+    .flavor-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .box .image {
+        height: 30rem;
+    }
+
+    .hero-title {
+        font-size: 3.8rem;
+    }
 }
