@@ -371,4 +371,25 @@ header {
         font-size: 2rem;
     }
 }
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .header-flex {
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logo-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-text {
+        font-size: 2rem;
+    }
+}
 }
