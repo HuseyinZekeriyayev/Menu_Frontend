@@ -300,11 +300,11 @@ header {
         padding: 0.5rem 0;
         width: 100%;
     }
-    .header-flex {
-        padding: 0 1rem;
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .header-flex {
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
    .logo-img {
     width: 100%;
     max-width: 400px;
