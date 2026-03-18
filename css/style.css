@@ -391,11 +391,16 @@ header {
         object-position: center;
     }
     #ickiler .box .image {
-        height: auto;
-    }
+    height: auto;
+    width: 100%;
+    overflow: visible;
+}
+
     #ickiler .box .image img {
-        height: auto;
-    }
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
     .logo-desktop {
         display: none;
     }
