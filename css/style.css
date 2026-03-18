@@ -126,7 +126,7 @@ header {
 .flavor-circle {
     width: 340px;                
     height: 340px;
-    border-radius: 50%;
+    border-radius: 0;
     overflow: hidden;
     background: transparent;
     border: none;
