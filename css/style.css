@@ -407,4 +407,39 @@ header {
     .logo-mobile {
         display: block;
     }
+  .icki-list li {
+        font-size: 1.4rem;
+    }
+    .icki-box h2 {
+        font-size: 2.2rem;
+    }
+}
+.icki-box {
+    background: #5a5050;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+}
+
+.icki-box h2 {
+    color: #e74c3c;
+    font-style: italic;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.icki-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icki-list li {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
