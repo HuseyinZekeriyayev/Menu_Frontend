@@ -408,14 +408,13 @@ header {
         display: block;
     }
   .icki-list li {
-    font-size: 1.2rem;
-    padding: 1rem 0;
-    gap: 0.5rem;
-    flex-wrap: nowrap;
-    white-space: nowrap;
+    font-size: 1rem;
+    padding: 0.8rem 0;
+    flex-wrap: wrap;
+    white-space: normal;
 }
 .icki-box {
-    padding: 1.5rem;
+    padding: 1.2rem 1.5rem;
 }
 .icki-box h2 {
     font-size: 2rem;
