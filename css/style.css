@@ -127,7 +127,7 @@ header {
     width: 340px;                
     height: 340px;
     border-radius: 0;
-    overflow: hidden;
+    overflow: visible;
     background: transparent;
     border: none;
     box-shadow: none;
